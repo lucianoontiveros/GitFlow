@@ -1,0 +1,20 @@
+
+"#Ejecicio 3.txt"
+git checkout main 
+git pull origin main 
+git checkout -b hotfix/login-linkedin
+touch "#Ejercicio 3.txt"
+git add login-linkedin.txt
+git commit -m "Se soluciono el error al iniciar sesi[on con Linkedin"
+git push -u origin hotfix/login-linkedin
+
+Pull request
+repositorio> PullRequest>NewPullRequest
+.base main
+.compare hotfix/login-linkedin
+
+En local
+git checkout main 
+git pull origin main
+git tag -a v.1.1.0 -m "version 1.1.0"
+git push -u origin v1.1.0
