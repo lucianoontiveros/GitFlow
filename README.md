@@ -26,7 +26,7 @@ Los ejercicios son simples, orientados simplemente a como se debe gestionar las 
 ------------
 
 
-#### **Caso 1 **
+#### **Caso 1**
 **Objetivo:** Implementar inción de sesión de facebook.
 **Rama de trabajo:** feature/login-con-facebook.
 **Rama Origen: **develop
@@ -36,14 +36,14 @@ Los ejercicios son simples, orientados simplemente a como se debe gestionar las 
 indicamos en consola
 - **git checkout -b develop | git push -u origin develop ** para crear o traer la rama con la ultima version.
 - **git checkout -b feature/login-con-facebook ** Para crear nuestra rama donde desarrollemos nuestro trabajo. 
-- **touch login-con-facebook.txt **  Para crear un archivo cómo si fuera nuestro proyecto nuevo o modificado por el desarrollador. 
-- **git add login-con-facebook.txt ** Agregamos los cambios realizados en el nuevo archivo. 
+- **touch login-con-facebook.txt**  Para crear un archivo cómo si fuera nuestro proyecto nuevo o modificado por el desarrollador. 
+- **git add login-con-facebook.txt** Agregamos los cambios realizados en el nuevo archivo. 
 - **git commit -m "Se implementó nuevo inicio de sesión"** comprometemos el cambio y agregamos el comentario.
 - **git push -u origin feature/login-con-facebook**  Y subimos nuestro trabajo a la rama nueva. 
 
 Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro desarrollo>
 **repositorio>Pull request>New pull request**
-**base: **develop
+**base:**develop
 **compare:** feature/login-con-facebook
 
 ------------
@@ -52,15 +52,15 @@ Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro
 #### **Caso 2**
 **Objetivo:** Exportar reporte de usuarios a Google drive. 
 **Rama de trabajo:** feature/exportar-report-drive
-**Rama Origen: **develop
-**Rama Destino: **develop
+**Rama Origen:**develop
+**Rama Destino:**develop
 
 ###### Pasos a seguir: 
 indicamos en consola
 - **git checkout -b develop | git push -u origin develop ** 
 - **git checkout -b feature/exportar-report-drive**
-- **touch exportar-report-drive.txt. ** 
-- **git add exportar-report-drive.txt ** 
+- **touch exportar-report-drive.txt.** 
+- **git add exportar-report-drive.txt** 
 - **git commit -m "Soporte para reportes de usuarios a Google drive"** 
 - **git push -u origin feature/exportar-report-drive**  
 
@@ -77,30 +77,30 @@ Debemos ingresar los cambios a la rama pertinente>
 #### **Caso 3**
 **Objetivo:** Error de inicio de sesión con Linkedin (v1.1.0). 
 **Rama de trabajo:** hotfix/login-linkeding
-**Rama Origen: **master
-**Rama Destino: **master y develop
+**Rama Origen:**master
+**Rama Destino:**master y develop
 ###### Pasos a seguir: 
 
 indicamos en consola
-- **git checkout -b main | git push -u origin main ** 
+- **git checkout -b main | git push -u origin main** 
 - **git checkout -b hotfix/login-linkeding** 
-- **touch login-linkeding.txt. **  
-- **git add login-linkeding.txt **
+- **touch login-linkeding.txt.**  
+- **git add login-linkeding.txt**
 - **git commit -m "Se soluciona el error al iniciar sesión con Linkedin"** 
 - **git push -u origin hotfix/login-linkeding**  
 
 Debemos ingresar los cambios a la rama pertinente>
 **repositorio>Pull request>New pull request**
-**base: **main
+**base:**main
 **compare:** hotfix/login-linkeding
 
 En local
 - **git checkout main  | git pull origin main**
-- **git tag -a v1.1.0 -m "version 1.1.0 **
-- **git push -u origin v1.1.0 **
+- **git tag -a v1.1.0 -m "version 1.1.0**
+- **git push -u origin v1.1.0**
 
 Pull request develop
-**base: **develop
+**base:**develop
 **compare:** main
 - **git checkout develop | git pull origin develop **  debemos actualizar la rama para que los demás usaurios puedan tener las nuevas actualizaciones.
 
@@ -109,12 +109,12 @@ Pull request develop
 #### **Caso 4**
 **Objetivo:** Liberar verision v1.2.0 
 **Rama de trabajo:** release/v1.2.0
-**Rama Origen: **develop
-**Rama Destino: **master y develop
+**Rama Origen:**develop
+**Rama Destino:**master y develop
 
 ###### Pasos a seguir: 
 indicamos en consola
-- **git checkout -b develop | git push -u origin develop ** 
+- **git checkout -b develop | git push -u origin develop** 
 - **git checkout -b release/v1.2.0**
 - **touch ajustes-release/v1.2.0.txt** 
 - **git add ajustes-release/v1.2.0.txt** 
@@ -128,13 +128,13 @@ Debemos ingresar los cambios a la rama pertinente>
 
 En local
 - **git checkout main  | git pull origin main**
-- **git tag -a v1.2.0 -m "version v1.2.0 **
-- **git push -u origin v1.2.0 **
+- **git tag -a v1.2.0 -m "version v1.2.0**
+- **git push -u origin v1.2.0**
 
 Pull request develop
-**base: **develop
+**base:**develop
 **compare:** main
-- **git checkout develop | git pull origin develop **  debemos actualizar la rama para que los demás usaurios puedan tener las nuevas actualizaciones.
+- **git checkout develop | git pull origin develop**  debemos actualizar la rama para que los demás usaurios puedan tener las nuevas actualizaciones.
 
 ------------
 
