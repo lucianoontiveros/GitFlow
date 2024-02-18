@@ -34,7 +34,7 @@ Los ejercicios son simples, orientados simplemente a como se debe gestionar las 
 
 ###### Pasos a seguir: 
 indicamos en consola
-- **git checkout -b develop | git push -u origin develop** para crear o traer la rama con la ultima version.
+- **git checkout -b develop | git pull origin develop** para crear o traer la rama con la ultima version.
 - **git checkout -b feature/login-con-facebook** Para crear nuestra rama donde desarrollemos nuestro trabajo. 
 - **touch login-con-facebook.txt**  Para crear un archivo cómo si fuera nuestro proyecto nuevo o modificado por el desarrollador. 
 - **git add login-con-facebook.txt** Agregamos los cambios realizados en el nuevo archivo. 
@@ -62,7 +62,7 @@ Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro
 
 ###### Pasos a seguir: 
 indicamos en consola
-- **git checkout -b develop | git push -u origin develop** 
+- **git checkout -b develop | git pull origin develop** 
 - **git checkout -b feature/exportar-report-drive**
 - **touch exportar-report-drive.txt.** 
 - **git add exportar-report-drive.txt** 
@@ -128,7 +128,7 @@ Pull request develop
 
 ###### Pasos a seguir: 
 indicamos en consola
-- **git checkout -b develop | git push -u origin develop** 
+- **git checkout -b develop | git pull origin develop** 
 - **git checkout -b release/v1.2.0**
 - **touch ajustes-release/v1.2.0.txt** 
 - **git add ajustes-release/v1.2.0.txt** 
