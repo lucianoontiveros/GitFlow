@@ -1,6 +1,9 @@
 
 
 ## **GitFlow for SobreCodigo**
+
+Aquí dejo las anotaciones de dos creadores de contenido que me ayudaron a poder manipular de una manera eficiente las ramas de los futuros trabajos que realizare. Para ello te dejo los links por el cual adquirí su contenido. Lo más interesante es la guia de Mizael que junto a las imagenes explicativas de Gaston, se complementan bien. 
+
 creador de contenido:  [Gaston Ortega](https://www.instagram.com/sobrecodigo/ "Gaston Ortega")
 
 [![Ramas](img/1GitFlow.jpeg "Ramas")](https://imgur.com/uZ9KJnd "Ramas")
