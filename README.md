@@ -1,6 +1,9 @@
 
 
 ## **GitFlow for SobreCodigo**
+
+Aquí dejo las anotaciones de dos creadores de contenido que me ayudaron a poder manipular de una manera eficiente las ramas de los futuros trabajos que realizare. Para ello te dejo los links por el cual adquirí su contenido. Lo más interesante es la guia de Mizael que junto a las imagenes explicativas de Gaston, se complementan bien. 
+
 creador de contenido:  [Gaston Ortega](https://www.instagram.com/sobrecodigo/ "Gaston Ortega")
 
 [![Ramas](img/1GitFlow.jpeg "Ramas")](https://imgur.com/uZ9KJnd "Ramas")
@@ -41,10 +44,13 @@ indicamos en consola
 - **git commit -m "Se implementó nuevo inicio de sesión"** comprometemos el cambio y agregamos el comentario.
 - **git push -u origin feature/login-con-facebook**  Y subimos nuestro trabajo a la rama nueva. 
 
-Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro desarrollo>
-**repositorio>Pull request>New pull request**
-**base: **develop
-**compare:** feature/login-con-facebook
+Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro desarrollo 
+
+**Repositorio>Pull request>New pull request**
+
+- **base:** develop
+- **compare:** feature/login-con-facebook
+
 
 ------------
 
@@ -52,8 +58,8 @@ Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro
 #### **Caso 2**
 - **Objetivo:** Exportar reporte de usuarios a Google drive. 
 - **Rama de trabajo:** feature/exportar-report-drive
-- **Rama Origen:**develop
-- **Rama Destino:**develop
+- **Rama Origen:** develop
+- **Rama Destino:** develop
 
 ###### Pasos a seguir: 
 indicamos en consola
@@ -64,10 +70,12 @@ indicamos en consola
 - **git commit -m "Soporte para reportes de usuarios a Google drive"** 
 - **git push -u origin feature/exportar-report-drive**  
 
-Debemos ingresar los cambios a la rama pertinente>
-**repositorio>Pull request>New pull request**
-**base:** develop
-**compare:** feature/exportar-report-drive
+Debemos ingresar los cambios a la rama pertinente
+
+**Repositorio>Pull request>New pull request**
+
+- **base:** develop
+- **compare:** feature/exportar-report-drive
 
 ------------
 
@@ -89,10 +97,12 @@ indicamos en consola
 - **git commit -m "Se soluciona el error al iniciar sesión con Linkedin"** 
 - **git push -u origin hotfix/login-linkeding**  
 
-Debemos ingresar los cambios a la rama pertinente>
-**repositorio>Pull request>New pull request**
-**base:** main
-**compare:** hotfix/login-linkeding
+Debemos ingresar los cambios a la rama pertinente
+
+**Repositorio>Pull request>New pull request**
+
+- **base:** main
+- **compare:** hotfix/login-linkeding
 
 En local
 - **git checkout main  | git pull origin main**
@@ -102,7 +112,7 @@ En local
 Pull request develop
 **base:** develop
 **compare:** main
-- **git checkout develop | git pull origin develop**  debemos actualizar la rama para que los demás usaurios puedan tener las nuevas actualizaciones.
+- **git checkout develop | git pull origin develop**: debemos actualizar la rama para que los demás usaurios puedan tener las nuevas actualizaciones.
 
 ------------
 
@@ -122,7 +132,7 @@ indicamos en consola
 - **git push -u origin release/v1.2.0**  
 
 Debemos ingresar los cambios a la rama pertinente>
-**repositorio>Pull request>New pull request**
+**Repositorio>Pull request>New pull request**
 **base:** main
 **compare:** release/v1.2.0
 
@@ -132,8 +142,8 @@ En local
 - **git push -u origin v1.2.0**
 
 Pull request develop
-**base:** develop
-**compare:** main
+- **base:** develop
+- **compare:** main
 - **git checkout develop | git pull origin develop**  debemos actualizar la rama para que los demás usaurios puedan tener las nuevas actualizaciones.
 
 ------------
