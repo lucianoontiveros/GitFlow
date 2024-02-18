@@ -1,4 +1,4 @@
-
+# GitFlow
 
 ## **GitFlow for SobreCodigo**
 
@@ -6,13 +6,8 @@ Aquí dejo las anotaciones de dos creadores de contenido que me ayudaron a poder
 
 creador de contenido:  [Gaston Ortega](https://www.instagram.com/sobrecodigo/ "Gaston Ortega")
 
-[![Ramas](img/1GitFlow.jpeg "Ramas")](https://imgur.com/uZ9KJnd "Ramas")
-[![Main](img/2GitFlow.jpeg "Main")](https://imgur.com/Ns0pDJM "Main")
-[![Hotfix](img/3GitFlow.jpeg "Hotfix")](https://imgur.com/yXso3HN "Hotfix")
+[![Ramas](img/1GitFlow.jpeg "Ramas")](https://imgur.com/uZ9KJnd "Ramas") 
 [![Develop](img/4GitFlow.jpeg "Develop")](https://imgur.com/DFkAkav "Develop")
-[![Feature](img/5GitFlow.jpeg "Feature")](https://imgur.com/8oOjgBJ "Feature")
-[![Release](img/6GitFlow.jpeg "Release")](https://imgur.com/TYOD8if "Release")
-
 
 
 ## Video explicativo por G. Mizael Mtz Hdz
@@ -34,6 +29,8 @@ Los ejercicios son simples, orientados simplemente a como se debe gestionar las 
 - **Rama de trabajo:** feature/login-con-facebook.
 - **Rama Origen:** develop
 - **Rama Destino:** develop
+
+[![Feature](img/5GitFlow.jpeg "Feature")](https://imgur.com/8oOjgBJ "Feature")
 
 ###### Pasos a seguir: 
 indicamos en consola
@@ -60,6 +57,8 @@ Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro
 - **Rama de trabajo:** feature/exportar-report-drive
 - **Rama Origen:** develop
 - **Rama Destino:** develop
+
+[![Feature](img/5GitFlow.jpeg "Feature")](https://imgur.com/8oOjgBJ "Feature")
 
 ###### Pasos a seguir: 
 indicamos en consola
@@ -88,6 +87,8 @@ Debemos ingresar los cambios a la rama pertinente
 - **Rama Origen:** master
 - **Rama Destino:** master y develop
 ###### Pasos a seguir: 
+
+[![Hotfix](img/3GitFlow.jpeg "Hotfix")](https://imgur.com/yXso3HN "Hotfix")
 
 indicamos en consola
 - **git checkout -b main | git pull origin main** 
@@ -121,6 +122,9 @@ Pull request develop
 - **Rama de trabajo:** release/v1.2.0
 - **Rama Origen:** develop
 - **Rama Destino:** master y develop
+
+[![Release](img/6GitFlow.jpeg "Release")](https://imgur.com/TYOD8if "Release")
+
 
 ###### Pasos a seguir: 
 indicamos en consola
