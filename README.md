@@ -2,7 +2,7 @@
 
 ## **GitFlow for SobreCodigo**
 
-Aquí dejo las anotaciones de dos creadores de contenido que me ayudaron a poder manipular de una manera eficiente las ramas de los futuros trabajos que realizare. Para ello te dejo los links por el cual adquirí su contenido. Lo más interesante es la guia de Mizael que junto a las imagenes explicativas de Gaston, se complementan bien. 
+Aquí dejo las anotaciones de dos creadores de contenido que me ayudaron a poder manipular de una manera eficiente las ramas de los futuros trabajos que realizaré. Para ello, te dejo los links por los cual adquirí su contenido. Lo más interesante es la guía de Mizael que, junto a las imágenes explicativas de Gastón, se complementa bien.
 
 creador de contenido:  [Gaston Ortega](https://www.instagram.com/sobrecodigo/ "Gaston Ortega")
 
@@ -17,8 +17,7 @@ Curso 100% práctico de cómo realizar el manejo de ramas: main/develop/release/
 
 [GitFlow en Github](https://www.youtube.com/watch?v=LkYWop93S70 "GitFlow en Github")
 
-Para practicar deben tener [Visual Code Studio ](https://code.visualstudio.com/ "Visual Code Studio ") y la extensión [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph "Git Graph"). 
-Los ejercicios son simples, orientados simplemente a como se debe gestionar las ramas en cada caso. Se simulara que somos cuatro programadores trabajando en un mismo proyecto de acuerdo a las siguientes condiciones: 
+Para practicar es necesario usar [Visual Code Studio ](https://code.visualstudio.com/ "Visual Code Studio ") y la extensión [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph "Git Graph")porque resultará más práctico entender los ejercicios. Luego eres libre de gestionar y practicar como lo desees. Los ejercicios son simples, orientados a cómo se debe gestionar las ramas en cada caso. Se simulará que somos cuatro programadores trabajando en un mismo proyecto de acuerdo a las siguientes condiciones: 
 
 
 ------------
@@ -33,15 +32,15 @@ Los ejercicios son simples, orientados simplemente a como se debe gestionar las 
 [![Feature](img/5GitFlow.jpeg "Feature")](https://imgur.com/8oOjgBJ "Feature")
 
 ###### Pasos a seguir: 
-indicamos en consola
-- **git checkout -b develop | git pull origin develop** para crear o traer la rama con la ultima version.
-- **git checkout -b feature/login-con-facebook** Para crear nuestra rama donde desarrollemos nuestro trabajo. 
-- **touch login-con-facebook.txt**  Para crear un archivo cómo si fuera nuestro proyecto nuevo o modificado por el desarrollador. 
+Indicamos en consola
+- **git checkout -b develop | git pull origin develop** con estas indicaciones, creamos por primera vez la rama (git checkout -b nombre de la rama nueva) o para  traer la rama con la última versión (git pull origin nombreDelaRamaExistente)
+- **git checkout -b feature/login-con-facebook** Solicitamos crear nuestra rama donde vamos a trabajar.
+- **touch login-con-facebook.txt** Creamos un archivo como si fuera nuestro proyecto nuevo o modificado por el desarrollador para fines prácticos para el ejemplo. Aquí, en una situación real, serían las modificaciones y archivos que agregarías al trabajar en el repositorio local. 
 - **git add login-con-facebook.txt** Agregamos los cambios realizados en el nuevo archivo. 
-- **git commit -m "Se implementó nuevo inicio de sesión"** comprometemos el cambio y agregamos el comentario.
+- **git commit -m "Se implementó nuevo inicio de sesión"** Comprometemos el cambio y agregamos el comentario.
 - **git push -u origin feature/login-con-facebook**  Y subimos nuestro trabajo a la rama nueva. 
 
-Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro desarrollo 
+También nos ocupa agregar las modificaciones a la rama pertinente una vez este terminado nuestro desarrollo 
 
 **Repositorio>Pull request>New pull request**
 
@@ -61,7 +60,7 @@ Debemos ingresar los cambios a la rama pertinente una vez este terminado nuestro
 [![Feature](img/5GitFlow.jpeg "Feature")](https://imgur.com/8oOjgBJ "Feature")
 
 ###### Pasos a seguir: 
-indicamos en consola
+Indicamos en consola
 - **git checkout -b develop | git pull origin develop** 
 - **git checkout -b feature/exportar-report-drive**
 - **touch exportar-report-drive.txt.** 
@@ -69,7 +68,7 @@ indicamos en consola
 - **git commit -m "Soporte para reportes de usuarios a Google drive"** 
 - **git push -u origin feature/exportar-report-drive**  
 
-Debemos ingresar los cambios a la rama pertinente
+También nos ocupa agregar las modificaciones a la rama pertinente una vez este terminado nuestro desarrollo 
 
 **Repositorio>Pull request>New pull request**
 
@@ -90,7 +89,7 @@ Debemos ingresar los cambios a la rama pertinente
 
 [![Hotfix](img/3GitFlow.jpeg "Hotfix")](https://imgur.com/yXso3HN "Hotfix")
 
-indicamos en consola
+Indicamos en consola
 - **git checkout -b main | git pull origin main** 
 - **git checkout -b hotfix/login-linkeding** 
 - **touch login-linkeding.txt.**  
@@ -98,7 +97,7 @@ indicamos en consola
 - **git commit -m "Se soluciona el error al iniciar sesión con Linkedin"** 
 - **git push -u origin hotfix/login-linkeding**  
 
-Debemos ingresar los cambios a la rama pertinente
+También nos ocupa agregar las modificaciones a la rama pertinente una vez este terminado nuestro desarrollo 
 
 **Repositorio>Pull request>New pull request**
 
@@ -113,7 +112,7 @@ En local
 Pull request develop
 **base:** develop
 **compare:** main
-- **git checkout develop | git pull origin develop**: debemos actualizar la rama para que los demás usaurios puedan tener las nuevas actualizaciones.
+- **git checkout develop | git pull origin develop**: Aquí hay que prestar atención porque es importante llevar los cambios a la rama develop para que los demás desarrolladores tenga disponibles estás modificaciones. No es un paso que deba omitirse. Fijarse en el cuadro para entenderlo mejor. 
 
 ------------
 
@@ -127,7 +126,7 @@ Pull request develop
 
 
 ###### Pasos a seguir: 
-indicamos en consola
+Indicamos en consola
 - **git checkout -b develop | git pull origin develop** 
 - **git checkout -b release/v1.2.0**
 - **touch ajustes-release/v1.2.0.txt** 
@@ -148,8 +147,12 @@ En local
 Pull request develop
 - **base:** develop
 - **compare:** main
-- **git checkout develop | git pull origin develop**  debemos actualizar la rama para que los demás usaurios puedan tener las nuevas actualizaciones.
+- **git checkout develop | git pull origin develop**  Aquí hay que prestar atención porque es importante llevar los cambios a la rama develop para que los demás desarrolladores tenga disponibles estás modificaciones. No es un paso que deba omitirse. Fijarse en el cuadro para entenderlo mejor. 
 
 ------------
+
+IMPORTANTE.
+
+Entiendo bien que podemos usar los comandos pertinentes como para hacer un merge. Sin embargo, si examinas el vídeo, te percatarás de que los ejemplos son eficaces en un entorno de trabajo en el que hay un jefe de proyecto que examina las modificaciones y desarrollos realizados antes de iniciar la implementación de los mismos. 
 
 
