@@ -106,7 +106,7 @@ También nos ocupa agregar las modificaciones a la rama pertinente una vez este 
 
 En local
 - **git checkout main  | git pull origin main**
-- **git tag -a v1.1.0 -m "version 1.1.0**
+- **git tag -a v1.0.1 -m "version 1.0.1**
 - **git push -u origin v1.1.0**
 
 Pull request develop
